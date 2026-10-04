@@ -1,0 +1,40 @@
+# BasicTicketFlow
+
+main: kit: flow: BasicTicketFlow:
+{
+  entity: "ticket",
+  kind: "basic",
+  name: "BasicTicketFlow",
+  step: [
+    {
+      i: {
+        ref: "ticket_ref01"
+      }
+
+      m: {
+        tid: "tid01"
+      }
+
+      o: "create"
+    }
+
+    {
+      i: {
+        ref: "ticket_ref01",
+        srcdatavar: "ticket_ref01_data",
+        suffix: "_dt0"
+      }
+
+      o: "load",
+      v: [
+        {
+          apply: "TextFieldMark",
+          def: {
+            mark: "Mark01-ticket_ref01"
+          }
+        }
+      ]
+    }
+  ],
+  "key$": "BasicTicketFlow"
+}

@@ -1,0 +1,73 @@
+# Generated from the API definition and overwritten on every build: do not
+# edit this file. Put customizations in the guide entry file, which includes
+# this one and overrides its defaults:
+#   guide.aontu
+
+guide: {
+  metrics: count: entity: 8
+  metrics: count: path: 11
+  metrics: count: method: 11
+
+  entity: export: {
+    path: "/api/usage/export": {
+      op: load: method: *GET
+    }
+  }
+
+  entity: health: {
+    path: "/api/health": {
+      op: load: method: *GET
+    }
+  }
+
+  entity: index_get: {
+    path: "/": {
+      op: load: method: *GET
+    }
+  }
+
+  entity: policy: {
+    path: "/api/policies": {
+      op: load: method: *GET
+    }
+  }
+
+  entity: reset: {
+    path: "/api/reset": {
+      op: create: method: *POST
+    }
+  }
+
+  entity: session: {
+    path: "/api/session": {
+      op: create: method: *POST
+    }
+  }
+
+  entity: ticket: {
+    path: "/api/tickets": {
+      op: load: method: *GET
+    }
+    path: "/api/tickets/{tid}": {
+      rename: param: "tid": *"id"
+      op: load: method: *GET
+    }
+    path: "/api/tickets/{tid}/approve": {
+      action: "approve": {}
+      rename: param: "tid": *"id"
+      op: create: method: *POST
+    }
+    path: "/api/tickets/{tid}/draft": {
+      action: "draft": {}
+      rename: param: "tid": *"id"
+      op: create: method: *POST
+    }
+  }
+
+  entity: usage: {
+    path: "/api/usage": {
+      op: load: method: *GET
+    }
+  }
+
+}

@@ -1,0 +1,40 @@
+{
+  "offline": {
+    "exit_code": 0,
+    "tests": 235,
+    "pass": 234,
+    "fail": 0,
+    "skipped": 1
+  },
+  "doctor": {
+    "exit_code": 0,
+    "result": ".sdk matches the scaffold (0 additive)"
+  },
+  "catalogue": {
+    "query": "northstar org:voxgig-sdk",
+    "total_count": 0,
+    "incomplete_results": false
+  },
+  "toolchain": {
+    "@voxgig/apidef": "8.22.1",
+    "@voxgig/docgen": "0.30.1",
+    "@voxgig/model": "12.0.0",
+    "@voxgig/sdkgen": "4.34.0"
+  },
+  "initial_offline": {
+    "tests": 235,
+    "pass": 232,
+    "fail": 2,
+    "skipped": 1,
+    "finding": "Both failures: missing base server variable in clean.test.ts"
+  },
+  "source_spec": {
+    "unchanged": true,
+    "openapi": "3.1.0"
+  },
+  "automated_session": {
+    "first_scaffold_log_utc": "2026-10-04T13:22:26Z",
+    "human_active_minutes": null,
+    "note": "Automated timestamps do not measure human work."
+  }
+}

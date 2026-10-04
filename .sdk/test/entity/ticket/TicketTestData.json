@@ -1,0 +1,42 @@
+{
+  "existing": {
+    "ticket": {
+      "TICKET00": {
+        "id": "TICKET00"
+      },
+      "TICKET01": {
+        "id": "TICKET01"
+      },
+      "TICKET02": {
+        "id": "TICKET02"
+      }
+    }
+  },
+  "new": {
+    "ticket": {
+      "ticket_ref01": {}
+    }
+  },
+  "requests": {
+    "POST /api/tickets/{tid}/approve": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    },
+    "POST /api/tickets/{tid}/draft": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    },
+    "GET /api/tickets/{tid}": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    },
+    "GET /api/tickets": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    }
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "tested_at": "2026-10-04T13:26:11.792Z",
+  "node": "v24.21.0",
+  "scope": "Existing API, fresh synthetic session, no model generation or approvals",
+  "outcomes": [
+    {
+      "name": "health",
+      "passed": true
+    },
+    {
+      "name": "unauthenticated_ticket_read",
+      "passed": true,
+      "status": 401
+    },
+    {
+      "name": "default_node_transport_has_no_cookie_jar",
+      "passed": true,
+      "session_created": true,
+      "subsequent_status": 401
+    },
+    {
+      "name": "session_with_transport_adapter",
+      "passed": true
+    },
+    {
+      "name": "semantic_ticket_collection_read",
+      "passed": true,
+      "count": 6
+    },
+    {
+      "name": "semantic_ticket_detail_read",
+      "passed": true
+    },
+    {
+      "name": "missing_ticket",
+      "passed": true,
+      "status": 404
+    },
+    {
+      "name": "semantic_policy_read",
+      "passed": true
+    }
+  ],
+  "calls": [
+    {
+      "method": "POST",
+      "path": "/api/session",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/tickets",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/tickets/TK-201",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/tickets/does-not-exist",
+      "status": 404
+    },
+    {
+      "method": "GET",
+      "path": "/api/policies",
+      "status": 200
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+# BasicResetFlow
+
+main: kit: flow: BasicResetFlow:
+{
+  entity: "reset",
+  kind: "basic",
+  name: "BasicResetFlow",
+  step: [
+    {
+      i: {
+        ref: "reset_ref01"
+      }
+
+      o: "create"
+    }
+  ],
+  "key$": "BasicResetFlow"
+}

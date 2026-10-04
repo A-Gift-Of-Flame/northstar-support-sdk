@@ -1,0 +1,28 @@
+# BasicPolicyFlow
+
+main: kit: flow: BasicPolicyFlow:
+{
+  entity: "policy",
+  kind: "basic",
+  name: "BasicPolicyFlow",
+  step: [
+    {
+      i: {
+        ref: "policy_ref01",
+        srcdatavar: "policy_ref01_data",
+        suffix: "_dt0"
+      }
+
+      o: "load",
+      v: [
+        {
+          apply: "TextFieldMark",
+          def: {
+            mark: "Mark01-policy_ref01"
+          }
+        }
+      ]
+    }
+  ],
+  "key$": "BasicPolicyFlow"
+}

@@ -1,0 +1,27 @@
+{
+  "existing": {
+    "reset": {
+      "RESET00": {
+        "id": "RESET00"
+      },
+      "RESET01": {
+        "id": "RESET01"
+      },
+      "RESET02": {
+        "id": "RESET02"
+      }
+    }
+  },
+  "new": {
+    "reset": {
+      "reset_ref01": {}
+    }
+  },
+  "requests": {
+    "POST /api/reset": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    }
+  }
+}

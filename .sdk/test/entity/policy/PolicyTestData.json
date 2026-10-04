@@ -1,0 +1,27 @@
+{
+  "existing": {
+    "policy": {
+      "POLICY00": {
+        "id": "POLICY00"
+      },
+      "POLICY01": {
+        "id": "POLICY01"
+      },
+      "POLICY02": {
+        "id": "POLICY02"
+      }
+    }
+  },
+  "new": {
+    "policy": {
+      "policy_ref01": {}
+    }
+  },
+  "requests": {
+    "GET /api/policies": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    }
+  }
+}

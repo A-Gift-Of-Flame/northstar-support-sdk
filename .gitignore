@@ -1,0 +1,33 @@
+# Local config / secrets
+*.local.*
+*.local
+
+# Dependencies (no trailing slash: also ignores node_modules SYMLINKS, e.g.
+# ts/node_modules -> shared tree, which a dir-only rule leaves tracked)
+node_modules
+
+# Logs
+*.log
+logs/
+
+# OS
+.DS_Store
+
+# Editor
+*~
+*.swp
+
+# Local build artifacts and session evidence
+.sdk/log/
+.sdk/dist/
+.sdk/model/.model-config/
+.sdk/test/.model-config/
+.sdk/model/sdk.json
+.sdk/test/test.json
+.jostraca/
+**/dist/
+**/dist-test/
+**/*.tsbuildinfo
+
+# CI upload unavailable with current GitHub OAuth scope
+.github/workflows/

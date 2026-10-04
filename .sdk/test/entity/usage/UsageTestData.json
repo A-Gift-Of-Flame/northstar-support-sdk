@@ -1,0 +1,27 @@
+{
+  "existing": {
+    "usage": {
+      "USAGE00": {
+        "id": "USAGE00"
+      },
+      "USAGE01": {
+        "id": "USAGE01"
+      },
+      "USAGE02": {
+        "id": "USAGE02"
+      }
+    }
+  },
+  "new": {
+    "usage": {
+      "usage_ref01": {}
+    }
+  },
+  "requests": {
+    "GET /api/usage": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    }
+  }
+}

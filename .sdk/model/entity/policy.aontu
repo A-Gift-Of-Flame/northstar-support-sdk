@@ -1,0 +1,42 @@
+# Entity: policy
+
+main: kit: entity: policy: {
+
+  alias: field: {}
+
+  name: "policy"
+  op: {
+    load: {
+      name: "load"
+      points: [
+        {
+          co: {
+            id: "GET /api/policies"
+            source: "openapi3"
+            version: 2
+          }
+          m: "GET"
+          o: "/api/policies"
+          s: [
+            {
+              lit: "api"
+            }
+            {
+              lit: "policies"
+            }
+          ]
+          t: {
+            req: "`reqdata`"
+            res: "`body`"
+          }
+        }
+      ]
+    }
+  }
+
+  fields: {
+  }
+
+
+
+}

@@ -1,0 +1,27 @@
+{
+  "existing": {
+    "export": {
+      "EXPORT00": {
+        "id": "EXPORT00"
+      },
+      "EXPORT01": {
+        "id": "EXPORT01"
+      },
+      "EXPORT02": {
+        "id": "EXPORT02"
+      }
+    }
+  },
+  "new": {
+    "export": {
+      "export_ref01": {}
+    }
+  },
+  "requests": {
+    "GET /api/usage/export": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    }
+  }
+}

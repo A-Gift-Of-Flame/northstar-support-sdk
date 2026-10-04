@@ -1,0 +1,42 @@
+# Entity: reset
+
+main: kit: entity: reset: {
+
+  alias: field: {}
+
+  name: "reset"
+  op: {
+    create: {
+      name: "create"
+      points: [
+        {
+          co: {
+            id: "POST /api/reset"
+            source: "openapi3"
+            version: 2
+          }
+          m: "POST"
+          o: "/api/reset"
+          s: [
+            {
+              lit: "api"
+            }
+            {
+              lit: "reset"
+            }
+          ]
+          t: {
+            req: "`reqdata`"
+            res: "`body`"
+          }
+        }
+      ]
+    }
+  }
+
+  fields: {
+  }
+
+
+
+}

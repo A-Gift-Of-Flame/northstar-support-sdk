@@ -1,0 +1,2 @@
+[15:28:48.637] INFO: sdkgen                 doctor-start         
+[15:28:48.665] INFO: sdkgen                 doctor-end           .sdk matches the scaffold (0 additive)

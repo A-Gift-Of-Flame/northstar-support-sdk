@@ -1,0 +1,45 @@
+# Entity: export
+
+main: kit: entity: export: {
+
+  alias: field: {}
+
+  name: "export"
+  op: {
+    load: {
+      name: "load"
+      points: [
+        {
+          co: {
+            id: "GET /api/usage/export"
+            source: "openapi3"
+            version: 2
+          }
+          m: "GET"
+          o: "/api/usage/export"
+          s: [
+            {
+              lit: "api"
+            }
+            {
+              lit: "usage"
+            }
+            {
+              lit: "export"
+            }
+          ]
+          t: {
+            req: "`reqdata`"
+            res: "`body`"
+          }
+        }
+      ]
+    }
+  }
+
+  fields: {
+  }
+
+
+
+}

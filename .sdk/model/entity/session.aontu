@@ -1,0 +1,42 @@
+# Entity: session
+
+main: kit: entity: session: {
+
+  alias: field: {}
+
+  name: "session"
+  op: {
+    create: {
+      name: "create"
+      points: [
+        {
+          co: {
+            id: "POST /api/session"
+            source: "openapi3"
+            version: 2
+          }
+          m: "POST"
+          o: "/api/session"
+          s: [
+            {
+              lit: "api"
+            }
+            {
+              lit: "session"
+            }
+          ]
+          t: {
+            req: "`reqdata`"
+            res: "`body`"
+          }
+        }
+      ]
+    }
+  }
+
+  fields: {
+  }
+
+
+
+}

@@ -1,0 +1,27 @@
+{
+  "existing": {
+    "session": {
+      "SESSION00": {
+        "id": "SESSION00"
+      },
+      "SESSION01": {
+        "id": "SESSION01"
+      },
+      "SESSION02": {
+        "id": "SESSION02"
+      }
+    }
+  },
+  "new": {
+    "session": {
+      "session_ref01": {}
+    }
+  },
+  "requests": {
+    "POST /api/session": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    }
+  }
+}
